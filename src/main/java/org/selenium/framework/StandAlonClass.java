@@ -44,6 +44,7 @@ public class StandAlonClass {
             }
         }
 // got to cart
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//button[@class=\"btn btn-custom\"])[3]")));
         driver.findElement(By.xpath("(//button[@class=\"btn btn-custom\"])[3]")).click();
 
         List<WebElement>CartItemList=driver.findElements(By.cssSelector(".cartSection h3"));
@@ -55,4 +56,4 @@ public class StandAlonClass {
 
 
 
-}
+
